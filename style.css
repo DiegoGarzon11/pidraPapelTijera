@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: arial;
+	margin: 0;
+	background: #282a3a;
+	color: white;
+}
+header {
+	display: grid;
+	place-items: center;
+	background: black;
+	color: white;
+	height: 200px;
+}
+.titulo {
+	margin: 0;
+}
+.confirmar {
+	border: none;
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 10px;
+	cursor: pointer;
+	animation: linea 1.5s infinite;
+}
+@keyframes linea {
+	to {
+		border-bottom: 1px solid grey;
+	}
+	from {
+		box-shadow: gray 0 10px 5px 3px;
+	}
+}
+.container {
+	display: none;
+}
+.reglas {
+	display: flex;
+}
+.reglas li {
+	font-size: 22px;
+}
+.reglas,
+.container {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+}
+.resultadoMaquina {
+	display: none;
+	font-size: 25px;
+}
+.btnAtaque,
+.again {
+	outline: none;
+	border: 1px solid black;
+	font-size: 25px;
+	padding: 30px;
+	border-radius: 30px;
+	cursor: pointer;
+	background-color: transparent;
+}
+.btnAtaque:hover {
+	transform: scale(1.2);
+	background-color: rgba(128, 128, 128, 0.182);
+}
+.marcador ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+.marcador ul li {
+	font-size: 30px;
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.numeroDerrota,
+.numeroVictoria,
+.numeroEmpate {
+	font-size: 30px;
+	color: red;
+}
+
+.footer {
+	display: none;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+}
+.final {
+	font-size: 2rem;
+	color: rgb(185, 78, 78);
+	text-decoration: underline;
+}
+@media (max-width: 800px) {
+	header h1 {
+		font-size: 1.5rem;
+	}
+	.reglas {
+		font-size: 1.5rem;
+		padding: 15px;
+	}
+	.listas {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	.confirmar {
+		margin-bottom: 30px;
+	}
+	.rachas {
+		padding: 10px;
+	}
+	.rachas li {
+		font-size: 1.6rem;
+	}
+}

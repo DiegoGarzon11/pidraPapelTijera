@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Jueguito</title>
+	</head>
+	<body>
+		<header class="hedaer">
+			<h1 class="titulo">Jueguito de 🪨 , 🧻 o ✂️</h1>
+		</header>
+		<div class="reglas">
+			<h3 class="TReglas">Este juego consta de las siguientes reglas:</h3>
+			<ol type="I" class="listas">
+				<li>
+					El juego se termina cuando uno de los dos jugadores, (en este caso tu o la computadora) ganen 5 juegos
+					juegos
+				</li>
+				<li>Solo puedes seleccionar las opciones que se te dan como validas al momento de comnezar el juego</li>
+				<li>Tu seras la primera persona en jugar, luego de ti, ira la computadora</li>
+			</ol>
+			<button class="confirmar">jugar!</button>
+		</div>
+		<section class="container">
+			<div class="opciones">
+				<h4>Tus opciones son las siguientes:</h4>
+				<button class="btnAtaque" id="piedra">🪨</button>
+				<button class="btnAtaque" id="papel">🧻</button>
+				<button class="btnAtaque" id="tijera">✂️</button>
+			</div>
+			<div class="resultadoMaquina">
+				computadora saca:
+				<span class="resultado"></span>
+			</div>
+			<div class="resultadoMaquina">
+				<span class="jugador"></span> saca:
+				<span class="resultadoUser"></span>
+			</div>
+			<div class="marcador">
+				<ul class="rachas">
+					<li>
+						Victorias
+						<span class="numeroVictoria">-</span>
+					</li>
+					<li>
+						Empates
+						<span class="numeroEmpate">-</span>
+					</li>
+					<li>
+						Derrotas
+						<span class="numeroDerrota">-</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="final">gano: <span class="valorResultado"> </span></div>
+			<button class="again">Volver a jugar</button>
+		</footer>
+
+		<script src="index.js"></script>
+	</body>
+</html>
